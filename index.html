@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="OpenClaw 사용자들이 모여 팁과 가이드를 공유하는 밋업/컨퍼런스 랜딩 페이지" />
+  <title>OpenClaw Meetup / Conference</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap hero">
+    <div class="badge">OpenClaw</div>
+    <h1>OpenClaw Meetup / Conference</h1>
+    <p class="subtitle">OpenClaw 사용자들이 모여 팁과 가이드를 공유하는 자리</p>
+
+    <div class="cta">
+      <a class="btn primary" href="#register">참가 신청</a>
+      <a class="btn" href="#agenda">아젠다</a>
+    </div>
+
+    <div class="meta">
+      <div><span class="k">일시</span><span class="v">(추후 공지)</span></div>
+      <div><span class="k">장소</span><span class="v">(추후 공지 / 온라인 가능)</span></div>
+      <div><span class="k">대상</span><span class="v">OpenClaw를 써봤거나 관심 있는 누구나</span></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid">
+      <div class="card">
+        <h2>무엇을 하나요?</h2>
+        <ul>
+          <li>세팅/운영 팁 공유</li>
+          <li>스킬 만들기/공유 사례</li>
+          <li>실전 워크플로우 데모</li>
+          <li>Q&amp;A + 네트워킹</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>발표/세션 제안</h2>
+        <p>5~15분 라이트닝 토크부터 30분 세션까지 환영합니다.</p>
+        <p class="muted">제안 링크는 곧 추가됩니다.</p>
+      </div>
+      <div class="card">
+        <h2>스폰서/장비</h2>
+        <p>장소/음향/스트리밍 지원이 가능하다면 연락 주세요.</p>
+        <p class="muted">문의 링크는 곧 추가됩니다.</p>
+      </div>
+    </section>
+
+    <section id="agenda" class="section">
+      <h2>아젠다 (초안)</h2>
+      <ol class="agenda">
+        <li><strong>오프닝</strong> — 오늘의 목적/규칙</li>
+        <li><strong>유저 스토리</strong> — OpenClaw로 무엇을 자동화했나</li>
+        <li><strong>스킬 만들기</strong> — 스킬 구조/디버깅 팁</li>
+        <li><strong>데모</strong> — 실제 워크플로우 시연</li>
+        <li><strong>Q&amp;A</strong> — 운영/보안/배포</li>
+      </ol>
+    </section>
+
+    <section id="register" class="section">
+      <h2>참가 신청</h2>
+      <p>아래 버튼을 참가 신청 링크로 교체하면 됩니다.</p>
+      <p>
+        <a class="btn primary" href="#" onclick="alert('등록 링크(예: Google Form, Luma, Eventbrite)를 여기에 넣어주세요.'); return false;">등록 링크 추가하기</a>
+      </p>
+      <p class="muted">(현재는 템플릿입니다. 요청 쓰레드 내용을 반영해서 문구/링크를 확정할게요.)</p>
+    </section>
+
+    <section class="section">
+      <h2>FAQ</h2>
+      <details>
+        <summary>참가비가 있나요?</summary>
+        <p>기본은 무료를 목표로 하되, 장소 대관/굿즈 등에 따라 달라질 수 있습니다.</p>
+      </details>
+      <details>
+        <summary>온라인으로도 참여 가능한가요?</summary>
+        <p>가능하면 스트리밍/녹화 옵션을 열어둘 예정입니다.</p>
+      </details>
+      <details>
+        <summary>발표 자료는 공유되나요?</summary>
+        <p>발표자 동의 하에 슬라이드/링크를 모아 공유합니다.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year"></span> OpenClaw Community</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
